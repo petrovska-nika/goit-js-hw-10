@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <title>Timer</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/flatpickr/dist/flatpickr.min.css"
+    />
   </head>
   <body>
     <div class="datetime">
@@ -30,11 +34,14 @@
       </div>
     </div>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
+    <script type="module">
+      import flatpickr from 'flatpickr';
 
+      flatpickr('#datetime-picker', {
+        enableTime: true,
+        dateFormat: 'Y-m-d H:i',
+      });
+    </script>
     <script type="module" src="./js/1-timer.js"></script>
   </body>
 </html>

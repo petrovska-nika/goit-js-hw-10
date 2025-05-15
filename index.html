@@ -2,14 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Notification Project</title>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-tnOdJfFE.css">
+    <title>Image Search</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-frHSA4Lh.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/index-BkSYgJMt.css">
   </head>
   <body>
-    <h1>Mini Projects</h1>
-    <ul>
-      <li><a href="./1-timer.html">1 — Timer</a></li>
-      <li><a href="./2-snackbar.html">2 — Snackbar (Notification)</a></li>
-    </ul>
+    <form class="form">
+      <label>
+        <input
+          type="text"
+          name="search-text"
+          placeholder="Search images..."
+          required
+        />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+
+    <span class="loader is-hidden"></span>
+
+    <ul class="gallery"></ul>
+
   </body>
 </html>
